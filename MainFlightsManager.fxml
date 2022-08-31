@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="screen" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="465.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainFlightsManager">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="670.0" layoutX="-28.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b4.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="addFlight" layoutX="278.0" layoutY="47.0" mnemonicParsing="false" onAction="#AddFlight" prefHeight="11.0" prefWidth="151.0" style="-fx-background-color: #3A90FF;" text="Add Flight" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="bigFlightReport" layoutX="213.0" layoutY="143.0" mnemonicParsing="false" onAction="#BigFlightReport" prefHeight="42.0" prefWidth="285.0" style="-fx-background-color: #3A90FF;" text="Report for big flights" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="flightsBYcountry" layoutX="158.0" layoutY="233.0" mnemonicParsing="false" onAction="#FlightsByCountryReport" prefHeight="42.0" prefWidth="361.0" style="-fx-background-color: #3A90FF;" text="Report for flights by country" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="47.0" layoutY="397.0" mnemonicParsing="false" onAction="#Back" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: #3A90FF;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateStatus" layoutX="212.0" layoutY="304.0" mnemonicParsing="false" onAction="#UpdateStatus" prefHeight="51.0" prefWidth="286.0" style="-fx-background-color: #3A90FF;" text="Update status of flight" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

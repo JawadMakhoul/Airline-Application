@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AssignGroundAttendants">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="610.0" layoutX="124.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b4.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="AddButton" layoutX="624.0" layoutY="531.0" mnemonicParsing="false" onAction="#AddToFlight" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #3A90FF;" text="Add to flight" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ListView fx:id="groundAttendants" layoutX="255.0" layoutY="129.0" prefHeight="72.0" prefWidth="490.0" />
+      <Text layoutX="14.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Ground Attendants:" wrappingWidth="241.3367462158203">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add shift to attendant:" wrappingWidth="241.3367462158203">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="shiftId" layoutX="410.0" layoutY="252.0" prefHeight="40.0" prefWidth="194.0" />
+      <TextField fx:id="startOfShift" layoutX="410.0" layoutY="326.0" prefHeight="40.0" prefWidth="194.0" promptText="HH:MM:SS" />
+      <TextField fx:id="endOfShift" layoutX="410.0" layoutY="399.0" prefHeight="40.0" prefWidth="194.0" promptText="HH:MM:SS" />
+      <Text layoutX="220.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift ID:" wrappingWidth="91.73670959472656">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="216.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start of Shift:" wrappingWidth="146.93666076660156">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="217.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End of Shift:" wrappingWidth="146.93666076660156">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="flights" layoutX="395.0" layoutY="53.0" prefHeight="40.0" prefWidth="218.0" promptText="Flights" style="-fx-background-color: white;" />
+      <Text layoutX="114.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose flight to assign for it:" wrappingWidth="241.3367462158203">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="role" layoutX="348.0" layoutY="464.0" prefHeight="40.0" prefWidth="194.0" />
+      <Text layoutX="245.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role:" wrappingWidth="53.33668518066406">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="38.0" layoutY="530.0" mnemonicParsing="false" onAction="#Back" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: #3A90FF;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
