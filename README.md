@@ -6,7 +6,7 @@ This project is about an Airline application for managers and customers.
   2) Flights Manager: add flight, get a report for big flights, update flight status.
   3) Employees Manager: assign main and second pilot for chosen flight, assign several air attendants according to plane size.
 
-Every manager can sign in to the account by fill up a default username and password according to his Position.
+Every manager can sign in to the account by filling up a default username and password according to his Position.
 
 We used access as a database.
 
